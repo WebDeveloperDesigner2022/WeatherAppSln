@@ -5,7 +5,7 @@ using SQLite;
 
 namespace WeatherApp.Models
 {
-    public class Weather
+    public class WeatherService
     {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
