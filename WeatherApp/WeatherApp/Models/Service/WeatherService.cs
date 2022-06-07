@@ -33,6 +33,7 @@ namespace WeatherApp.Models.Service
 
     public class Root
     {
+
         public Coord coord { get; set; }
         public List<Weather> weather { get; set; }
         public string @base { get; set; }
