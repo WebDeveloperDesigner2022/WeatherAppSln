@@ -15,5 +15,6 @@ namespace WeatherApp.Models
         public string Presure { get; set; }
         public string Cloud { get; set; }
         public string Wind { get; set; }
+
     }
 }
