@@ -31,7 +31,7 @@ namespace WeatherApp.Models.Service
         public double _1h { get; set; }
     }
 
-    public class WeatherServices
+    public class WeatherServiceData
     {
 
         public Coord coord { get; set; }

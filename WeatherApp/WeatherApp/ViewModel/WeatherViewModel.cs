@@ -10,13 +10,13 @@ namespace WeatherApp.ViewModel
 {
     public class WeatherViewModel
     {
-        private IList<WeatherServices> _weatherList;
-        public IList<WeatherServices> WeatherList
+        private IList<WeatherServiceData> _weatherList;
+        public IList<WeatherServiceData> WeatherList
         {
             get
             {
                 if (_weatherList == null)
-                    _weatherList = new ObservableCollection<WeatherServices>();
+                    _weatherList = new ObservableCollection<WeatherServiceData>();
                 return _weatherList;
             }
             set

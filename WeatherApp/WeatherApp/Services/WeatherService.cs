@@ -11,7 +11,7 @@ namespace WeatherApp.Services
 {
     public class WeatherService
     {
-        public async Task<WeatherServices> GetWeatherData()
+        public async Task<WeatherServiceData> GetWeatherData()
         {
 
             var data = await Permissions.CheckStatusAsync<Permissions.LocationWhenInUse>();
@@ -29,7 +29,7 @@ namespace WeatherApp.Services
             var response = await client.GetStringAsync(url);
 
 
-            var temp = JsonConvert.DeserializeObject<WeatherServices>(response);
+            var temp = JsonConvert.DeserializeObject<WeatherServiceData>(response);
 
             return temp;
         }
