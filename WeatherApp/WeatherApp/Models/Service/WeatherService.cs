@@ -12,8 +12,8 @@ namespace WeatherApp.Models.Service
 
     public class Coord
     {
-        public int lon { get; set; }
-        public int lat { get; set; }
+        public double lon { get; set; }
+        public double lat { get; set; }
     }
 
     public class Main
@@ -31,7 +31,7 @@ namespace WeatherApp.Models.Service
         public double _1h { get; set; }
     }
 
-    public class Root
+    public class WeatherServices
     {
 
         public Coord coord { get; set; }
@@ -65,6 +65,7 @@ namespace WeatherApp.Models.Service
         public string main { get; set; }
         public string description { get; set; }
         public string icon { get; set; }
+        public string icon_url => string.Format("{0}{1}{2}", "https://openweathermap.org/img/wn/", icon, "@4x.png");
     }
 
     public class Wind
