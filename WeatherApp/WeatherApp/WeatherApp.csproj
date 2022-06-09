@@ -19,8 +19,12 @@
   </ItemGroup>
  
   <ItemGroup>
-    <EmbeddedResource Update="Views\ShowWeatherPage.xaml">
+    <EmbeddedResource Update="ShowWeatherPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+ 
+  <ItemGroup>
+    <Folder Include="Views\" />
   </ItemGroup>
 </Project>
