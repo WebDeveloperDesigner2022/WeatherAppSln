@@ -20270,7 +20270,7 @@ namespace WeatherApp.Droid
 			public const int tooltip_frame_light = 2131165328;
 			
 			// aapt resource value: 0x7F070091
-			public const int weatherpic = 2131165329;
+			public const int weather = 2131165329;
 			
 			static Drawable()
 			{
